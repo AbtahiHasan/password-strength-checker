@@ -55,6 +55,10 @@ input{
     color: #808080;
     cursor: pointer;
 }
+#toggle img{
+    width: 16px;
+    height: 16px;
+}
 .strength{
     width: 25%;
     display: inline-block;

@@ -54,12 +54,12 @@ passwordInput.oninput = () => {
 
 toggleBtn.onclick = () => {
     const correntAttributeName = passwordInput.getAttribute("type"),
-    eyeIcon = document.querySelector("#toggle i");
+    eyeIcon = document.querySelector("#toggle img");
     if(correntAttributeName === "password") {
         passwordInput.setAttribute("type", "text");
-        eyeIcon.className = "fa-solid fa-eye-slash";
+        eyeIcon.src = "./icons/eye-solid.svg";
     } else {
         passwordInput.setAttribute("type", "password");
-        eyeIcon.className = "fas fa-eye";
+        eyeIcon.src = "./icons/eye-slash-solid.svg";
     }
 }
